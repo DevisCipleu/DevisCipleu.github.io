@@ -69,8 +69,6 @@ section{
     color: var(--primary-color);
 }
 
-/* header */
-
 .header{
     top: 0;
     left: 0;
@@ -134,10 +132,6 @@ section{
     display: none;
 }
 
-/* end */
-
-/* home */
-
 .home{
     min-height: 100vh;
     display: flex;
@@ -157,10 +151,6 @@ section{
     color: #fff;
     margin-bottom: 20px;
 }
-
-/* end */
-
-/* about us */
 
 .about{
     padding-top:50px;
@@ -199,6 +189,9 @@ section{
     color: #444;
     padding: 1rem 0;
     line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2em;
 }
 
 .line{
@@ -208,10 +201,6 @@ section{
     height: 3px;
     background: var(--primary-color);
 }
-
-/* end */
-
-/* menu */
 
 .menu .box-container{
     display: grid;
@@ -271,10 +260,6 @@ section{
     color: #000;
     font-size: 1.3rem;
 }
-
-/* end */
-
-/* contact */
 
 .contact .row{
     display: -webkit-box;
@@ -338,10 +323,6 @@ section{
     background: none;
 }
 
-/* end */
-
-/* Footer */
-
 .footer{
     background: var(--main-color);
 }
@@ -392,9 +373,6 @@ section{
 .footer .credit span{
     color: var(--primary-color);
 }
-
-
-/* media queries */
 
 @media (max-width:991px){
 
@@ -455,7 +433,7 @@ section{
     }
 
     .home{
-        background-position: left;
+        background-position: center;
         justify-content: center;
         text-align: center;
     }
