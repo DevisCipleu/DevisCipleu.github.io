@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  background: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.postcard {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  background: rgba(255, 255, 255, 0.101);
+  margin: 1em auto;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
+  transform: rotate(2.5deg);
+  transition: all 0.5s ease;
+}
+
+.postcard1 {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  background: #f594b862;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) rotate(2.5deg);
+  filter: blur(2px);
+  z-index: -1;
+  margin: 1em auto;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #fdfdfd;
+  margin-bottom: 1em;
+}
+
+.postcard:hover,
+.postcard:active,
+.postcard:focus {
+  transform: rotate(0deg);
+}
+
+.mail_stamp {
+  width: 80px;
+  float: right;
+}
+
+.push {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+/*footer*/
+footer {
+  margin: 2em auto;
+  text-align: center;
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  color: white;
+}
+
+footer p {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+p span {
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  color: #800020;
+}
+
+p {
+  font-size: 18px;
+  font-family: cursive;
+  font-weight: 540;
+}
+
+.ullu {
+  font-size: 20px;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .postcard,
+  .postcard1 {
+    padding: 1.5em;
+  }
+
+  .mail_stamp {
+    width: 60px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p span {
+    font-size: 20px;
+  }
+
+  .ullu {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .postcard,
+  .postcard1 {
+    padding: 1em;
+  }
+
+  .mail_stamp {
+    width: 50px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  p span {
+    font-size: 18px;
+  }
+
+  .ullu {
+    font-size: 16px;
+  }
+}
